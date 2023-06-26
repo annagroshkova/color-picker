@@ -1,0 +1,60 @@
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Color picker</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="stylesheet" href="index.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">    </head>
+    <body>
+
+      <div class="page">
+      <form class="header__form">
+        <input name="color" class="color-picker" type="color">
+        <div class="custom-select" style="height:100%">
+          <select name="mode" class="color-modes">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <img class="dropdown-arrow" src="./images/dropdown-icon.svg">
+        </div>
+        <button class="color-scheme-btn">Get color scheme</button>
+      </form>
+
+      <section class="colors-container">
+        <div class="col col-0">
+          <div class="color color-0"></div>
+          <div class="hex-value hex-value-0">vjvjvhj</div>
+        </div>
+        <div class="col col-1">
+          <div class="color color-1"></div>
+          <div class="hex-value hex-value-1">jvhmbkh</div>
+        </div>
+        <div class="col col-2">
+          <div class="color color-2"></div>
+          <div class="hex-value hex-value-2">vhvjbln</div>
+        </div>
+        <div class="col col-3">
+          <div class="color color-3"></div>
+          <div class="hex-value hex-value-3">vkjnlkn</div>
+        </div>
+        <div class="col col-4">
+          <div class="color color-4"></div>
+          <div class="hex-value hex-value-4">xhfcgji</div>
+        </div>
+      </section>
+    </div>
+
+      <script src="index.js" type="module"></script>
+
+    </body>
+</html>
